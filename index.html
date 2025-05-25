@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navigation {
+            background-color: #4c9def !important;
+        }
+
+        .navigation a {
+            color: white !important;
+        }
+
+        .jumbotron {
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 0% !important;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .jumbotron h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgb(25, 240, 18);
+            margin-top: 40px;
+        }
+
+        .jumbotron p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            color: white);
+            padding: 0 20px;
+        }
+
+        .card-box {
+            margin: 60px 10vh;
+            padding: 20px 10px;
+        }
+
+        .card-item {
+            margin-bottom: 20px;
+        }
+
+        .card-item .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .upperFooter {
+            background-color: #c72d53;
+            padding: 20px 0;
+            border-top: 1px solid #dee2e6;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .lowerFooter {
+            background-color:  #c72d53;
+            padding: 10px 0;
+            text-align: center;
+            color: #ebf4fb;
+        }
+        .social-networks{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .link a {
+            color: #4c9def;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        .download {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 610px) {
+            .card-box {
+                margin: 20px 5px;
+            }
+            .upperFooter {
+                flex-direction: column;
+                align-items: center;
+            }
+            .download {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body data-spy ="scroll" data-target="#navigation" data-offset="60">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navigation fixed-top" id="navigation">
+        <section class="container-fluid">
+            <a class="navbar-brand" href="#"><b>Kritartha Tour & Travels</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#jumbotron">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#card-box">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="login">
+                    <input class="form-control me-2" type="email" placeholder="Email" aria-label="Email" />
+                    <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password" />
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </form>
+            </section>
+        </section>
+    </nav>
+    <main>
+        <section class="mt-4 p-5 bg-primary text-white jumbotron" id="jumbotron">
+            <h1>What We Offer!</h1>
+            <p>Welcome to Kritartha Tour & Travels, your gateway to unforgettable journeys! Whether you're dreaming of
+                serene beaches, vibrant cities, majestic mountains, or cultural adventures, we specialize in crafting
+                personalized travel experiences to suit every explorer's heart. With expertly curated tours, seamless
+                booking, and a passion for discovery, we make every trip not just a destination, but a memory of a
+                lifetime.
+                Let us take you there—one adventure at a time.</p>
+            <button class="btn btn-success p-2" type="button"><a class="nav-link" target="_blank"
+                    href="https://www.kritartha.co.in/"> Know More </a></button>
+        </section>
+        <section class="row row-cols-1 row-cols-md-3 g-4 card-box" id="card-box">
+            <article class="col card-item">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJhdmVsfGVufDB8fDB8fHww"
+                        class="card-img-top" alt="travel-planning">
+                    <div class="card-body">
+                        <h5 class="card-title">Travel Planning</h5>
+                        <p class="card-text">We helps you to plan your travel according to your budget as well as your
+                            choices.
+                            Our team of experts will assist you in creating a personalized itinerary that suits your
+                            preferences and interests.</p>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 1 mins ago</small>
+                    </div>
+                </div>
+            </article>
+            <article class="col card-item">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/1426471241/photo/congratulations-for-buying-a-new-car.webp?a=1&b=1&s=612x612&w=0&k=20&c=FUQOk-oL_M1xWRIpPJ6amEPWHgVs38CcKpk940JDY8Y="
+                        class="card-img-top" alt="car-rentals">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Rentals</h5>
+                        <p class="card-text">
+                            We provide a wide range of car rental options to suit your needs, whether you're looking for
+                            a compact car for city driving or a spacious SUV for a family road trip. Our fleet is
+                            well-maintained and
+                            regularly serviced to ensure your safety and comfort on the road.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </article>
+            <article class="col card-item">
+                <div class="card h-100">
+                    <img src="https://plus.unsplash.com/premium_photo-1718146019362-dbc88b750e51?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRvdXJzfGVufDB8fDB8fHww"
+                        class="card-img-top" alt="guided-tours">
+                    <div class="card-body">
+                        <h5 class="card-title">Guided Tours</h5>
+                        <p class="card-text">
+                            Our guided tours are designed to provide you with an immersive experience, allowing you to
+                            explore the culture, history, and natural beauty of your chosen destination. Our
+                            knowledgeable
+                            guides will lead you through iconic landmarks, hidden gems, and local hotspots, ensuring you
+                            get the most out of your journey.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 2 mins ago</small>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="text-center text-lg-start bg-light text-muted" id="footer">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom upperFooter">
+            <div class="social-networks">
+                <div class="me-5 d-none d-lg-block">
+                    <span style="color: #dee2e6;">Get connected with us on social networks:</span>
+                </div>
+                <div class="link">
+                    <a href="https://www.facebook.com/singh.rajan.379048" class="me-4 text-reset">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://x.com/rebelrajpuut" class="me-4 text-reset">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://www.kritartha.co.in/" class="me-4 text-reset">
+                        <i class="bi bi-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kritartha_outsourcing/" class="me-4 text-reset">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/company/kritartha-outsourcing" class="me-4 text-reset">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/singhrajan007" class="me-4 text-reset">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="download">
+                <a href="https://play.google.com/store/apps/details?id=com.kritartha.tourtravels&hl=en_IN&gl=US"
+                    class="btn btn-primary btn-sm me-2" target="_blank">
+                    <i class="bi bi-google-play"></i> Download App
+                </a>
+                <a href="https://apps.apple.com/in/app/kritartha-tour-travels/id6446026260"
+                    class="btn btn-primary btn-sm me-2" target="_blank">
+                    <i class="bi bi-apple"></i> Download App
+                </a>
+            </div>
+
+        </section>
+        <section class="p-4 lowerFooter">
+            <div class="text-center">
+                © 2024 Kritartha Tour & Travels. All rights reserved.
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-7+9b1d8e2f4c8a0c5f4b6e2f4c8a0c5f4b6e2f4c8a0c5f4b6e2f4c8a0c5f4b6e"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+        integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
